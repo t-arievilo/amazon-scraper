@@ -13,6 +13,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.product img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
